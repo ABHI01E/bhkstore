@@ -1,0 +1,359 @@
+
+.plannav{
+    /*border-bottom: 7.5px solid;
+    animation: rainbow2 5s linear;
+    animation-iteration-count: infinite;
+    background:rgb(26, 26, 26);
+    border-top: 7.5px solid;*/
+}
+.homenav{
+    margin: auto;
+    line-height: 80px;
+    display: flex;
+    top: 0;
+    border-bottom: 7.5px solid;
+    animation: rainbow2 5s linear;
+    animation-iteration-count: infinite;
+    width: 100%;
+    margin-bottom: 20px;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 1;
+    background:rgb(26, 26, 26);
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.kolom2 h1{
+    color: white;
+}
+.kolom2 h4{
+    color: white;
+}
+.kolom2 p{
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+}
+.plan{
+    margin-left: 5%;
+    width: 300px;
+    height: 300px;
+}
+.section1{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+.section3{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+.section2{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 5%
+}
+.kolom{
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.kolom .deskripsi{
+
+    font-size: 45px;
+    font-weight: bold;
+    color: #fff;
+}
+.kolom .deskripsi2{
+    font-size: 20px;
+    color: #fff;
+}
+.kolom .deskripsi3{
+    font-size: 45px;
+    font-weight: bold;
+    color: #fff;
+}
+.kolom .deskripsi4{
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+}
+p{
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+input[type="submit"]{
+    margin-top: 5px;
+    width: 95%;
+    height: 40px;
+
+}
+p2{
+    margin-left: 2%;
+}
+.btn0{
+    border: none;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 8px 10px 8px 10px;
+    border-radius: 20px;
+    animation: rainbow 5s linear;
+    animation-iteration-count: infinite;
+    color: #fff;
+    cursor: pointer;
+}
+.forgotpass a.btn0{
+    margin-left: 17%;
+    margin-top: 5%;
+}
+.forgotpass{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.signup p{
+    margin-left: 2%;
+    margin-top: 2%;
+}
+b.btn2{
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 20px;
+    animation: rainbow 5s linear;
+    animation-iteration-count: infinite;
+    color: #fff;
+    cursor: pointer;
+}
+@keyframes rainbow2{
+    100%,0%{
+        border-color: rgb(255,0,0);
+    }
+    8%{
+        border-color: rgb(255,127,0);
+    }
+    16%{
+        border-color: rgb(255,255,0);
+    }
+    25%{
+        border-color: rgb(127,255,0);
+    }
+    33%{
+        border-color: rgb(0,255,0);
+    }
+    41%{
+        border-color: rgb(0,255,127);
+    }
+    50%{
+        border-color: rgb(0,255,255);
+    }
+    58%{
+        border-color: rgb(0,127,255);
+    }
+    66%{
+        border-color: rgb(0,0,255);
+    }
+    75%{
+        border-color: rgb(127,0,255);
+    }
+    83%{
+        border-color: rgb(255,0,255);
+    }
+    91%{
+        border-color: rgb(255,0,127);
+    }
+}
+@keyframes rainbow{
+    100%,0%{
+        background-color: rgb(255,0,0);
+    }
+    8%{
+        background-color: rgb(255,127,0);
+    }
+    16%{
+        background-color: rgb(255,255,0);
+    }
+    25%{
+        background-color: rgb(127,255,0);
+    }
+    33%{
+        background-color: rgb(0,255,0);
+    }
+    41%{
+        background-color: rgb(0,255,127);
+    }
+    50%{
+        background-color: rgb(0,255,255);
+    }
+    58%{
+        background-color: rgb(0,127,255);
+    }
+    66%{
+        background-color: rgb(0,0,255);
+    }
+    75%{
+        background-color: rgb(127,0,255);
+    }
+    83%{
+        background-color: rgb(255,0,255);
+    }
+    91%{
+        background-color: rgb(255,0,127);
+    }
+}
+.navbar ul li .defaultbtn::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    left: 0px;
+    bottom: 15px;
+    transition: 0.5s;
+}
+
+.navbar ul li .defaultbtn:hover::after{
+    width: 100%;
+    animation: rainbow 5s linear;
+    animation-iteration-count: infinite;
+}
+.navbar hr{
+    background: #7f04c2;
+    color: #7f04c2;
+} 
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.login{
+    margin-top: 10%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #383838;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.login label{
+    margin-left: 3%;
+}
+.login form{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+.login input{
+    margin-left: 3%;
+}
+.txt_field label{
+    transition: .5s;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    position: absolute;
+    color: #adadad;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: none;
+    transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: -5px;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+    width: 100%;
+}
+.txt_field input{
+    font-weight: bold;
+    color: #fff;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    background: none;
+    outline: none;
+}
+.txt_field{
+    border-color: #adadad;
+    position: relative;
+    border-bottom: 3px solid;
+}
+h1{
+    margin-bottom: 2%;
+    padding: 0 0 20px 0;
+    border-bottom: 5px solid;
+    animation: rainbow2 5s linear;
+    animation-iteration-count: infinite;
+    font-size: 50px;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    text-align: center;
+}
+body{
+    color: white;
+    background: rgb(26, 26, 26);
+}
+.logo{
+    width: 15%;
+    height: 15%;
+}
+.navbar h1::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #7f04c2;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar h1:hover::after{
+    width: 100%;
+}
+.discord{
+    margin: auto;
+    width: 32px;
+    height: 32px;
+}
+.deskripsi5{
+    font-size: 45px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
