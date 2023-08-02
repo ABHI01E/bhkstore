@@ -29,6 +29,13 @@
     align-items: center;
     justify-content: space-between;
 }
+.check{
+
+}
+.hreflink{
+    text-decoration: none;
+    font-weight: 300;
+}
 .navbar ul li{
     list-style: none;
     display: inline-block;

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <head>
 	<link rel="stylesheet" href="style.css">
-	<title>TkmanSMP - Minecraft Server</title>
-	<script src="carousel.js"></script>
-	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+	<title>BHKStore - By AbhiDevs</title>
 </head>
+<script src="carousel.js"></script>
+<script src="https://unpkg.com/browse/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init();</script>
 <nav class="homenav">
 	<div class="navbar">
 		<img src="https://i.ibb.co/mNzWHj5/Proyek-Baru-2.png" class="logo">
@@ -14,6 +16,8 @@
 			<li><a href="#store"class="defaultbtn">Products</a></li>
 			<li><a href="login.html" class="btn0">Sign Up</a></li>
 			<li><a href="login.html" class="btn0">Login</a></li>
+			<li><div class="avatar"></div></li>
+			<li><span id="pengguna">Pengguna<span id="random" onload="randomnum()"></span></span></li>
 		</ul>
 	</div>
 	<div class="kategori">
@@ -32,6 +36,10 @@
 <body>
 	<div class="main">
 		<section class="container">
+		<div class="typewriter">
+			<h1 class="type">"Dibuat oleh Chevalier Muda, untuk Chevalier Muda"</h1>
+			<div class="bottom-left">- BHKStore Founder, AbhiDevs</div>
+		</div>
 			<div class="slider-wrapper">
 				<div class="slider">
 					<img id="slide-1" src="https://i.ibb.co/3csn0DN/Presentation1.png" alt="3D rendering of an imaginary orange planet in space" />
@@ -45,7 +53,6 @@
 		</section>
 	  <br>
 	  
-	  <!-- The dots/circles -->
 	  <div style="text-align:center">
 		<span class="dot" onclick="currentSlide(1)"></span>
 		<span class="dot" onclick="currentSlide(2)"></span>
@@ -59,7 +66,8 @@
 			<section class="section2"id="store">
 			<div class="store-wrap2"><h1 class="plantext">Mystery Boxes</h1><h4 class="sale">BEST PRODUCT</h4><h4 class="sale2">RECOMMENDED</h4></div>
 			<div class="store-wrap">
-				<div class="plans1">
+				<div class="plans1" data-aos="fade-up"
+				data-aos-duration="3000">
 				<div class="imgx">
 				<img src="dirt.png" class="plan">
 				</div>
@@ -72,7 +80,8 @@
 					<a href="https://wa.me/+6285732102099?text=I'm%20interested%20in%20your%20car%20for%20sale" class="btn2">Beli Sekarang!</a>
 				</div>
 				</div>
-				<div class="plans1">
+				<div class="plans1" data-aos="fade-up"
+				data-aos-duration="3000">
 				<div class="imgx">
 				<img src="cobblestone.png" class="plan">
 				</div>
@@ -85,7 +94,8 @@
 					<a href="https://wa.me/+6285732102099?text=I'm%20interested%20in%20your%20car%20for%20sale" class="btn2">Beli Sekarang!</a>
 				</div>
 				</div>
-				<div class="plans1">
+				<div class="plans1" data-aos="fade-up"
+				data-aos-duration="3000">
 				<div class="imgx">
 				<img src="coal.png" class="plan">
 				</div>
@@ -98,7 +108,8 @@
 					<a href="https://wa.me/+6285732102099?text=I'm%20interested%20in%20your%20car%20for%20sale" class="btn2">Beli Sekarang!</a>
 				</div>
 				</div>
-				<div class="plans1">
+				<div class="plans1" data-aos="fade-up"
+				data-aos-duration="3000">
 					<div class="imgx">
 					<img src="coal.png" class="plan">
 					</div>
@@ -111,7 +122,8 @@
 						<a href="https://wa.me/+6285732102099?text=I'm%20interested%20in%20your%20car%20for%20sale" class="btn2">Beli Sekarang!</a>
 					</div>
 					</div>
-					<div class="plans1">
+					<div class="plans1" data-aos="fade-up"
+					data-aos-duration="3000">
 						<div class="imgx">
 						<img src="coal.png" class="plan">
 						</div>
@@ -124,7 +136,8 @@
 							<a href="https://wa.me/+6285732102099?text=I'm%20interested%20in%20your%20car%20for%20sale" class="btn2">Beli Sekarang!</a>
 						</div>
 						</div>
-					<div class="plans1">
+					<div class="plans1" data-aos="fade-up"
+					data-aos-duration="3000">
 						<div class="imgx">
 						<img src="coal.png" class="plan">
 						</div>
@@ -140,9 +153,10 @@
 				</div>	
 				</section>
 				<section class="section2"id="store">
-				<div class="store-wrap2"><h1 class="plantext">Pilihan untuk anda</h1><h4 class="sale">DISKON 10%</h4><h4 class="sale2">RECOMMENDED</h4><h4 class="sale3">ALAT TULIS</h4></div>
+				<div class="store-wrap2"><h1 class="plantext">Pilihan untuk anda</h1><h4 class="sale">DISKON 10%</h4><h4 class="sale2">RECOMMENDED</h4><h4 class="sale3">ALAT TULIS</h4><h4 class="sale4">BISA COD</h4></div>
 				<div class="store-wrap">
-					<div class="plans1">
+				<div class="plans1" data-aos="fade-up"
+				data-aos-duration="3000">
 					<div class="imgx">
 					<img src="https://zebraindonesia.com/product/gelPen/images/sarasa_clip.png" class="plan">
 					</div>
@@ -155,7 +169,8 @@
 						<a href="https://wa.me/+6285732102099?text=I'm%20interested%20in%20your%20car%20for%20sale" class="btn2">Beli Sekarang!</a>
 					</div>
 					</div>
-					<div class="plans1">
+					<div class="plans1" data-aos="fade-up"
+					data-aos-duration="3000">
 					<div class="imgx">
 					<img src="https://img.priceza.co.id/img2/2130004/0001/2130004-20211117024440-811926237911201.jpg" class="plan">
 					</div>
@@ -168,7 +183,8 @@
 						<a href="https://wa.me/+6285732102099?text=I'm%20interested%20in%20your%20car%20for%20sale" class="btn2">Beli Sekarang!</a>
 					</div>
 					</div>
-					<div class="plans1">
+					<div class="plans1" data-aos="fade-up"
+					data-aos-duration="3000">
 					<div class="imgx">
 					<img src="https://img.id.my-best.com/product_images/95ac582cee1d472cd8731e104001efa9.png?ixlib=rails-4.3.1&q=70&lossless=0&w=800&h=800&fit=clip&s=73754fe19ffe5860d8eeb49d284e9628" class="plan">
 					</div>
@@ -181,7 +197,8 @@
 						<a href="https://wa.me/+6285732102099?text=I'm%20interested%20in%20your%20car%20for%20sale" class="btn2">Beli Sekarang!</a>
 					</div>
 					</div>
-					<div class="plans1">
+					<div class="plans1" data-aos="fade-up"
+					data-aos-duration="3000">
 						<div class="imgx">
 						<img src="https://filebroker-cdn.lazada.co.id/kf/Sdb9d155a0d3c4631a12cda559e0c6bfc9.jpg" class="plan">
 						</div>
@@ -194,7 +211,8 @@
 							<a href="https://wa.me/+6285732102099?text=I'm%20interested%20in%20your%20car%20for%20sale" class="btn2">Beli Sekarang!</a>
 						</div>
 						</div>
-						<div class="plans1">
+						<div class="plans1" data-aos="fade-up"
+						data-aos-duration="3000">
 							<div class="imgx">
 							<img src="https://apis.unair.ac.id/lpse/storage/amel/penyedia/scan-gallery-648966901677897941.png" class="plan">
 							</div>
@@ -207,7 +225,8 @@
 								<a href="https://wa.me/+6285732102099?text=I'm%20interested%20in%20your%20car%20for%20sale" class="btn2">Beli Sekarang!</a>
 							</div>
 							</div>
-						<div class="plans1">
+						<div class="plans1" data-aos="fade-up"
+						data-aos-duration="3000">
 							<div class="imgx">
 							<img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//95/MTA-2715593/snowman_snowman-bg-12-whiteboard-marker-spidol--1-pcs-_full16.jpg" class="plan">
 							</div>
@@ -222,76 +241,205 @@
 							</div>
 					</div>
 					</section>
-			</div>
-			</nav>
-			
-				<div class="contact">
-					<h1 class="deskripsi5">Join Us</h1>
-					<br>
-					<!--Untuk Contacts-->
-					<section class="section1"id="contacts">
-					<div class="join">
-						<div class="plans2">
+					<section class="section2"id="store">
+						<div class="store-wrap2"><h1 class="plantext">Back To School</h1><h4 class="sale2">RECOMMENDED</h4><h4 class="sale4">BISA COD</h4><h4 class="sale3">ALAT TULIS</h4></div>
+						<div class="store-wrap">
+						<div class="plans1" data-aos="fade-up"
+						data-aos-duration="3000">
 							<div class="imgx">
-								<p class="disc">[DISCORD]</p>
-								<img src="discord.png" class="plan">
-							</div>
-							<iframe src="https://discordapp.com/widget?id=1115545342558081037&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" class="widget"></iframe>
-						</div>
-						<div class="plans2">
-							<div class="imgx">
-								<p class="disc2">[MINECRAFT]</p>
-								<img src="grass.png" class="plan">
+							<img src="https://images.tokopedia.net/img/cache/500-square/product-1/2018/3/26/27235057/27235057_d0e21000-93fd-4bc3-a3ee-624dd521ddad_2048_2730.jpg" class="plan">
 							</div>
 							<div class="kolom2">
-							<p class="deskripsi4">
-								Java Support ✅<br>
-								Bedrock Support ✅<br>
-								Version : 1.8 - 1.20.1<br>
-								Admin ramah ✅<br>
-								IP : tkman.falix.gg<br>
-								Rules: <br>
-								1. No SARA<br>
-								2. Toxic sewajarnya<br>
-								3. Jangan memanfaatkan dupe/bug/exploit<br>
-								4. No Grief<br>
-								<br>
-								Join skuyy<br>
-								<br>
-								<b href="https://wa.me/+6285732102099?text=I'm%20interested%20in%20your%20car%20for%20sale" class="btn2">Vote disini</b>
-							</p>
+								<h4>Rp. 12000/pcs</h4>
+								<p class="deskripsi4"><b>BUKU TULIS MAXICAMPUS</b><br>
+								Dikirim dari CILEUNGSI 📍<br>
+								Rating : 5.0 ⭐ / 5.0 ⭐<br>
+								gdeabhi01✅<br><br>
+								<a href="https://wa.me/+6285732102099?text=I'm%20interested%20in%20your%20car%20for%20sale" class="btn2">Beli Sekarang!</a>
 							</div>
-						</div>
-					</div>
-					</section>
-				</div>
-
+							</div>
+							<div class="plans1" data-aos="fade-up"
+							data-aos-duration="3000">
+							<div class="imgx">
+							<img src="https://images.tokopedia.net/img/cache/500-square/product-1/2017/9/7/7451868/7451868_900fc9f1-b032-42a4-b801-2b650d244252_2048_0.jpg" class="plan">
+							</div>
+							<div class="kolom2">
+								<h4>Rp. 12000/pcs</h4>
+								<p class="deskripsi4"><b>BUKU TULIS DUNIACAMPUS</b><br>
+								Dikirim dari CILEUNGSI 📍<br>
+								Rating : 5.0 ⭐ / 5.0 ⭐<br>
+								gdeabhi01✅<br><br>
+								<a href="https://wa.me/+6285732102099?text=I'm%20interested%20in%20your%20car%20for%20sale" class="btn2">Beli Sekarang!</a>
+							</div>
+							</div>
+							<div class="plans1" data-aos="fade-up"
+							data-aos-duration="3000">
+							<div class="imgx">
+							<img src="https://images.tokopedia.net/img/cache/700/product-1/2019/7/6/64221860/64221860_23f7584b-09c1-4691-9aa3-3e19d8630331_686_686.jpg" class="plan">
+							</div>
+							<div class="kolom2">
+								<h4>Rp. 13000/pcs</h4>
+								<p class="deskripsi4"><b>BUKU TULIS B.B CAMPUS</b><br>
+								Dikirim dari CILEUNGSI 📍<br>
+								Rating : 5.0 ⭐ / 5.0 ⭐<br>
+								gdeabhi01✅<br><br>
+								<a href="https://wa.me/+6285732102099?text=I'm%20interested%20in%20your%20car%20for%20sale" class="btn2">Beli Sekarang!</a>
+							</div>
+							</div>
+							<div class="plans1" data-aos="fade-up"
+							data-aos-duration="3000">
+								<div class="imgx">
+								<img src="https://filebroker-cdn.lazada.co.id/kf/Sdb9d155a0d3c4631a12cda559e0c6bfc9.jpg" class="plan">
+								</div>
+								<div class="kolom2">
+									<h4>Rp. 20000/pcs</h4>
+									<p class="deskripsi4"><b>TIPE X</b><br>
+									Dikirim dari CILEUNGSI 📍<br>
+									Rating : 5.0 ⭐ / 5.0 ⭐<br>
+									gdeabhi01✅<br><br>
+									<a href="https://wa.me/+6285732102099?text=I'm%20interested%20in%20your%20car%20for%20sale" class="btn2">Beli Sekarang!</a>
+								</div>
+								</div>
+								<div class="plans1" data-aos="fade-up"
+								data-aos-duration="3000">
+									<div class="imgx">
+									<img src="https://apis.unair.ac.id/lpse/storage/amel/penyedia/scan-gallery-648966901677897941.png" class="plan">
+									</div>
+									<div class="kolom2">
+										<h4>Rp. 12000/pcs</h4>
+										<p class="deskripsi4"><b>PENGGARIS</b><br>
+										Dikirim dari CILEUNGSI 📍<br>
+										Rating : 5.0 ⭐ / 5.0 ⭐<br>
+										gdeabhi01✅<br><br>
+										<a href="https://wa.me/+6285732102099?text=I'm%20interested%20in%20your%20car%20for%20sale" class="btn2">Beli Sekarang!</a>
+									</div>
+									</div>
+								<div class="plans1" data-aos="fade-up"
+								data-aos-duration="3000">
+									<div class="imgx">
+									<img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//95/MTA-2715593/snowman_snowman-bg-12-whiteboard-marker-spidol--1-pcs-_full16.jpg" class="plan">
+									</div>
+									<div class="kolom2">
+										<h4>Rp. 5000/pcs</h4>
+										<p class="deskripsi4"><b>SPIDOL</b><br>
+										Dikirim dari CILEUNGSI 📍<br>
+										Rating : 5.0 ⭐ / 5.0 ⭐<br>
+										gdeabhi01✅<br><br>
+										<a href="https://wa.me/+6285732102099?text=I'm%20interested%20in%20your%20car%20for%20sale" class="btn2">Beli Sekarang!</a>
+									</div>
+									</div>
+							</div>
+							</section>
+							<section class="section2"id="store">
+								<div class="store-wrap2"><h1 class="plantext2">#ORDERJASA👑</h1><h4 class="sale2">RECOMMENDED</h4><h4 class="sale5">PILIHAN DEVELOPER</h4><h4 class="sale4">BISA COD</h4></div>
+								<div class="store-wrap">
+								<div class="plans1" data-aos="fade-up"
+								data-aos-duration="3000">
+									<div class="imgx">
+									<img src="https://i.ibb.co/1r1Lwz5/grass.webp" class="plan">
+									</div>
+									<div class="kolom2" >
+										<h4>Rp. 40k - 120k</h4>
+										<p class="deskripsi4"><b>JASA DEV MC SERVER</b><br>
+										Rating : 5.0 ⭐ / 5.0 ⭐<br>
+										gdeabhi01✅<br><br>
+										<a href="https://wa.me/+6285732102099?text=I'm%20interested%20in%20your%20car%20for%20sale" class="btn2">Beli Sekarang!</a>
+									</div>
+									</div>
+									<div class="plans1" data-aos="fade-up"
+									data-aos-duration="3000">
+									<div class="imgx">
+									<img src="https://cdn.pixabay.com/photo/2016/05/31/13/22/maths-1426891_960_720.png" class="plan">
+									</div>
+									<div class="kolom2">
+										<h4>Rp. 5k - 20k</h4>
+										<p class="deskripsi4"><b>JASA JOKI MATEMATIKA</b><br>
+										Rating : 5.0 ⭐ / 5.0 ⭐<br>
+										gdeabhi01✅<br><br>
+										<a href="https://wa.me/+6285732102099?text=I'm%20interested%20in%20your%20car%20for%20sale" class="btn2">Beli Sekarang!</a>
+									</div>
+									</div>
+									<div class="plans1" data-aos="fade-up"
+									data-aos-duration="3000">
+									<div class="imgx">
+									<img src="https://cdn1-production-images-kly.akamaized.net/gy6vtnsEImG9xkuaeDDDp-A2Hno=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1590335/original/092899500_1494403408-Ilustrasi_coding__pemrograman__programmer__programming_Kredit_Pexels_via_Pixabay.jpg" class="plan">
+									</div>
+									<div class="kolom2">
+										<h4>Rp. 10k - 30k</h4>
+										<p class="deskripsi4"><b>JASA DEV TUGAS TIK</b><br>
+										Rating : 5.0 ⭐ / 5.0 ⭐<br>
+										gdeabhi01✅<br><br>
+										<a href="https://wa.me/+6285732102099?text=I'm%20interested%20in%20your%20car%20for%20sale" class="btn2">Beli Sekarang!</a>
+									</div>
+									</div>
+									<div class="plans1" data-aos="fade-up"
+									data-aos-duration="3000">
+										<div class="imgx">
+										<img src="https://miro.medium.com/v2/resize:fit:792/1*lJ32Bl-lHWmNMUSiSq17gQ.png" class="plan">
+										</div>
+										<div class="kolom2">
+											<h4>Rp. 10k - 50k</h4>
+											<p class="deskripsi4"><b>JASA DEV HTMLCSS</b><br>
+											Rating : 5.0 ⭐ / 5.0 ⭐<br>
+											gdeabhi01✅<br><br>
+											<a href="https://wa.me/+6285732102099?text=I'm%20interested%20in%20your%20car%20for%20sale" class="btn2">Beli Sekarang!</a>
+										</div>
+										</div>
+										<div class="plans1" data-aos="fade-up"
+										data-aos-duration="3000">
+											<div class="imgx">
+											<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png" class="plan">
+											</div>
+											<div class="kolom2">
+												<h4>Rp. 2000/pcs</h4>
+												<p class="deskripsi4"><b>JASA CREATE EMAIL BOT</b><br>
+												Rating : 5.0 ⭐ / 5.0 ⭐<br>
+												gdeabhi01✅<br><br>
+												<a href="https://wa.me/+6285732102099?text=I'm%20interested%20in%20your%20car%20for%20sale" class="btn2">Beli Sekarang!</a>
+											</div>
+											</div>
+									</div>
+									</section>
+			</div>
+			</nav>
 				<br>
 				<div class="homepage">
 					<!--Untuk Home-->
-					<section class="section1"id="home">
-					<img src="computing.png" class="home1">
+					<section class="section2"id="home">
+					<div class="store-wrap">
+					<div data-aos="fade-up"
+					data-aos-duration="3000">
+					<img src="https://i.ibb.co/WnCMfgK/Proyek-Baru-4.png" class="home1">
+					</div>
 						<div class="kolom">
-							<h1 class="deskripsi">Apa itu TkmanSMP?</h1>
-							<p class="deskripsi2">TkmanSMP adalah server minecraft survival multiplayer<br>
-							yang bisa dimainkan oleh Minecraft:Bedrock maupun Minecraft:Java <br>
-							Fitur-fitur nya pun tidak kalan menarik, ada banyak sekali fitur yang dapat <br>
-							kamu rasakan di server ini. Untuk lebih jelasnya klik tombol dibawah!</p>
-							<b href="#plans" class="btn2">Fitur Server ini</b>
+							<h1 class="deskripsi">Apa itu BHKStore?</h1>
+							<p class="deskripsi2">BHKStore adalah platform marketplace<br>
+							yang pastinya bisa diandalkan. Dengan belanja di BHKStore, anda sudah <br>
+							membantu developer BHKStore yaitu Chevalier Muda untuk terus berkreasi! <br>
+							BHKStore sering mengadakan event-event sale guna memberikan diskon<br>
+					 		kepada pelanggan-pelanggan! Buruan belanja di BHKStore!</p>
+							<a href="#plans" class="btn3">Mulai Belannja</a>
 						</div>
+					</div>
 					</section>
-				<div class="why">
-					<section class="section3"id="whypicktkmancloud">
+				<div class="whypickbhkstore">
+					<section class="section2"id="whypicktkmancloud">
+					<div class="store-wrap">
 						<div class="kolom">
-							<h1 class="deskripsi">IP Server</h1>
-							<p class="deskripsi2">TkmanSMP IP #1 - [tkman.falix.gg Port: Default] (Java)<br>
-							Versi : 1.8 - 1.20.1<br>
-							TkmanSMP IP #2 - [tkman.falix.gg Port: 25565] (Bedrock)<br>
-							Jam Buka : Jam 05.00 WIB - Jam 00.00 WIB (Mungkin bisa kurang bisa lebih)<br>
-							</p>
-							<b href="#plans" class="btn2">Vote disini!</b>
+							<h1 class="deskripsi">Apa kata orang-orang tentang BHKStore?</h1>
+							<div data-aos="fade-up"
+							data-aos-duration="3000">
+							<img class="why" src="https://i.ibb.co/7zVvYf5/image.png">
+					   		</div>
+							<div data-aos="fade-up"
+							data-aos-duration="3000">					
+							<img class="why" src="https://i.ibb.co/FhzrqbW/image.png">
+							</div>
+							<br><br><br>
+							<a href="#plans" class="btn3">Review kita di TrustPilot!</a>
 						</div>
-						<img src="mc.png" class="home2">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png?20091205084734" class="home1">
+					</div>
 					</section>
 				</div>
 			</div>
@@ -312,4 +460,8 @@
 		</div>
 
 	</div>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	  AOS.init();
+	</script>
 </body>

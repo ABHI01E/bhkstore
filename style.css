@@ -170,6 +170,117 @@ b {
 .kolom{
     margin: 0;
 }
+#pengguna{
+    font-weight: bold;
+    color: white;
+}
+.forgotpass a.btn0{
+    margin-left: 17%;
+    margin-top: 5%;
+}
+.forgotpass{
+    margin-left: 20%;
+    margin-top: 5%;
+}
+.signup p{
+    margin-left: 2%;
+    margin-top: 2%;
+}
+.headerlogin{
+    color: white;
+    margin-bottom: 2%;
+    padding: 0 0 20px 0;
+    border-bottom: 5px solid;
+    animation: rainbow2 5s linear;
+    animation-iteration-count: infinite;
+    font-size: 50px;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    text-align: center;
+}
+.login{
+    padding-top: 40px;
+    margin-top: 10%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #383838;
+    font-weight: bold;
+    border-radius: 20px;
+    padding-bottom: 40px;
+}
+.login label{
+    margin-left: 3%;
+}
+.login form{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+.login input{
+    margin-left: 2.5%;
+}
+.txt_field label{
+    transition: .5s;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    position: absolute;
+    color: #adadad;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: none;
+    transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: -5px;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+    width: 100%;
+}
+.txt_field input{
+    font-weight: bold;
+    color: #fff;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    background: none;
+    outline: none;
+}
+.txt_field{
+    border-color: #adadad;
+    position: relative;
+    border-bottom: 3px solid;
+}
+.avatar{
+    position: absolute;
+    top: -22px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-image: url("https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png");
+    background-size: cover;
+    
+}
 .kolom2 h1{
     font-size: 10px;
     font-weight: normal;
@@ -189,11 +300,32 @@ b {
     width: 64px;
     height: 64px;
 }
-
+.forgotpass .btn0{
+    text-decoration: none;
+}
 .section1{
     margin: 0;
     margin-bottom: 0px;
     display: flex;
+}
+input .check{
+    position: absolute;
+    right: 5%;
+}
+.hreflink{
+    animation: rainbow4 5s linear;
+    animation-iteration-count: infinite;
+    text-decoration: none;
+    font-weight: bold;
+}
+p .notmember{
+    position: absolute;
+    right: 5%;
+}
+#error-message{
+    color: #ff0000;
+    margin-top: 10px;
+    text-align: center;
 }
 .section3{
     margin: auto;
@@ -204,6 +336,9 @@ b {
 }
 .store-wrap2{
     display: flex;
+}
+.store-wrap3{
+    display: inline-block;
 }
 .sale{
     margin-left: 20px;
@@ -246,6 +381,32 @@ b {
     background-image: url("https://i.ibb.co/2sZkvJJ/cartoon-empty-school-college-classroom-vector-44510614.jpg");
     background-size: cover;
 }
+.sale4{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 8px;
+    cursor: none;
+    color: white;
+    font-weight: bold;
+    border: transparent;
+    border-radius: 10px;
+    text-decoration: none;
+    background: #C95EFB;
+}
+.sale5{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 8px;
+    cursor: none;
+    color: white;
+    font-weight: bold;
+    border: transparent;
+    border-radius: 10px;
+    text-decoration: none;
+    background: #007bff;
+}
 .section2{
     margin-right: 20px;
     padding: 40px 30px;
@@ -260,6 +421,18 @@ b {
     margin-left: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+.kolomm{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.kolomm .deskripsi{
+
+    font-size: 45px;
+    font-weight: bold;
+    color: #fff;
 }
 .kolom .deskripsi{
 
@@ -298,7 +471,35 @@ p{
     margin: 10px 0px 10px 0px;
     padding: 10px 0px 10px 0px;
 }
+
 a.btn0{
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 8px 10px 8px 10px;
+    border-radius: 20px;
+    animation: rainbow 5s linear;
+    animation-iteration-count: infinite;
+    color: #fff;
+    cursor: pointer;
+}
+a.btn1{
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 8px 10px 8px 10px;
+    border-radius: 20px;
+    animation: rainbow 5s linear;
+    animation-iteration-count: infinite;
+    color: #fff;
+    cursor: pointer;
+}
+.signup{
+    color: white;
+}
+input.btn0{
+    width: 50%;
+    margin-left: 25%;
+    border: none;
     font-weight: bold;
     margin-top: 20px;
     padding: 8px 10px 8px 10px;
@@ -318,11 +519,18 @@ a.btn0{
 }
 .bottom-left {
     color: white;
+    overflow: hidden; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation:
+      typing 5s steps(100, end);
+    color: white;
     font-size: 20px;
     font-weight: bold;
     position: absolute;
-    bottom: 8px;
-    left: 16px;
+    bottom: 4px;
+    left: 24px;
   }
 a.btn2{
     text-decoration: none;
@@ -330,6 +538,17 @@ a.btn2{
     margin-top: 40px;
     padding: 3px 4px 3px 4px;
     border-radius: 8px;
+    animation: rainbow 5s linear;
+    animation-iteration-count: infinite;
+    color: #fff;
+    cursor: pointer;
+}
+.btn3{
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 40px;
+    padding: 10px 12px 10px 12px;
+    border-radius: 15px;
     animation: rainbow 5s linear;
     animation-iteration-count: infinite;
     color: #fff;
@@ -371,6 +590,44 @@ a.btn2{
     }
     91%{
         border-color: rgb(255,0,127);
+    }
+}
+@keyframes rainbow4{
+    100%,0%{
+        color: rgb(255,0,0);
+    }
+    8%{
+        color: rgb(255,127,0);
+    }
+    16%{
+        color: rgb(255,255,0);
+    }
+    25%{
+        color: rgb(127,255,0);
+    }
+    33%{
+        color: rgb(0,255,0);
+    }
+    41%{
+        color: rgb(0,255,127);
+    }
+    50%{
+        color: rgb(0,255,255);
+    }
+    58%{
+        color: rgb(0,127,255);
+    }
+    66%{
+        color: rgb(0,0,255);
+    }
+    75%{
+        color: rgb(127,0,255);
+    }
+    83%{
+        color: rgb(255,0,255);
+    }
+    91%{
+        color: rgb(255,0,127);
     }
 }
 @keyframes rainbow{
@@ -512,6 +769,48 @@ body{
     text-align: left;
     margin-bottom: 20px;
 }
+.plantext2{
+    margin-top: 30px;
+    text-align: left;
+    margin-bottom: 20px;
+    animation: rainbow4 5s linear;
+    animation-iteration-count: infinite;
+}
+.why{
+    animation: myAnim ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+.typewriter{
+    position: relative;
+}
+
+.typewriter .type {
+    font-size: 40px;
+    color: white;
+    overflow: hidden; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(40, end);
+    padding: 100px 80px;
+    background: #262626;
+    border-radius: 25px;
+    margin-bottom: 45px;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes reveal {
+    from { display: none }
+    to { display: block }
+  } 
 .plans1{
     width: 128px;
     height: 200px;
@@ -610,6 +909,8 @@ body{
     transform: scale(1.1);
   }
 .home1{
+    width: 320px;
+    height: 320px;
     margin-left: 45px;
     animation: myAnim ease 3s;
     animation-iteration-count: 1;
@@ -684,5 +985,43 @@ body{
     }
     91%{
         border-color: rgb(255,0,127);
+    }
+}
+@keyframes rainbowtb{
+    100%,0%{
+        -webkit-text-stroke: 1px rgb(255,0,0);
+    }
+    8%{
+        -webkit-text-stroke: 1px rgb(255,127,0);
+    }
+    16%{
+        -webkit-text-stroke: 1px rgb(255,255,0);
+    }
+    25%{
+        -webkit-text-stroke: 1px rgb(127,255,0);
+    }
+    33%{
+        -webkit-text-stroke: 1px rgb(0,255,0);
+    }
+    41%{
+        -webkit-text-stroke: 1px rgb(0,255,127);
+    }
+    50%{
+        -webkit-text-stroke: 1px rgb(0,255,255);
+    }
+    58%{
+        -webkit-text-stroke: 1px rgb(0,127,255);
+    }
+    66%{
+        -webkit-text-stroke: 1px rgb(0,0,255);
+    }
+    75%{
+        -webkit-text-stroke: 1px rgb(127,0,255);
+    }
+    83%{
+        -webkit-text-stroke: 1px rgb(255,0,255);
+    }
+    91%{
+        -webkit-text-stroke: 1px rgb(255,0,127);
     }
 }

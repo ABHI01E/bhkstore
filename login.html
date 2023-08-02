@@ -1,57 +1,72 @@
 <!DOCTYPE html>
 <head>
-	<link rel="stylesheet" href="style2.css">
+	<link rel="stylesheet" href="style.css">
 	<title>TkmanCloud - Login to Panel</title>
 </head>
 <body>
-	<div class="main">
-		<nav class="homenav">
-			<div class="navbar">
-				<img src="cloud.png" class="logo">
-				<ul>
-					<li><a href="index.html#home"class="defaultbtn">Home</a></li>
-					<li><a href="index.html#contacts"class="defaultbtn">Contact</a></li>
-					<li><a href="index.html#plans"class="defaultbtn">Plans</a></li>
-					<li><a href="index.html#whypicktkmancloud"class="defaultbtn">Kenapa TkmanCloud?</a></li>
-					<li><a href="login.html" class="btn0">Login</a></li>
-					<li><a href="signup.html" class="btn0">Daftar</a></li>
-				</ul>
-			</div>
-		</nav>
-        <br>
+    <script src="carousel.js"></script>
+    <script src="login.js"></script>
+    <nav class="homenav">
+        <div class="navbar">
+            <img src="https://i.ibb.co/mNzWHj5/Proyek-Baru-2.png" class="logo">
+            <ul>
+                <li><a href="index.html"class="defaultbtn">Home</a></li>
+                <li><a href="#contacts"class="defaultbtn">Kenapa BHKStore?</a></li>
+                <li><a href="#store"class="defaultbtn">Products</a></li>
+                <li><a href="login.html" class="btn0">Sign Up</a></li>
+                <li><a href="login.html" class="btn0">Login</a></li>
+                <li><div class="avatar"></div></li>
+                <li><span id="pengguna">Pengguna<span id="random" onload="randomnum()"></span></span></li>
+            </ul>
+        </div>
+        <div class="kategori">
+        <ul>
+            <li><a href="#home"class="defaultbtn">Pulpen</a></li>
+            <li><a href="#contacts"class="defaultbtn">Pensil</a></li>
+            <li><a href="#store"class="defaultbtn">Penghapus</a></li>
+            <li><a href="#home"class="defaultbtn">Penggaris</a></li>
+            <li><a href="#contacts"class="defaultbtn">Alat warna</a></li>
+            <li><a href="#store"class="defaultbtn">Mystery Boxes</a></li>
+            <li><a href="#home"class="defaultbtn">Buku Tulis</a></li>
+            <input type="text" class="search-bar" placeholder="Cari peralatan sekolah? Di bhkstore aja">
+        </ul>
+    </div>
+    </nav>
+        <br><br><br><br>
     <div class="login">
-        <form method="post">
-        <h1>Login to Panel</h1>
+        <form method="post" id="login-form">
+        <h1 class="headerlogin">Login ke Akun</h1>
         <br>
         <div class="txt_field">
-            <input type="text" alt="Your Username Here" required>
+            <input type="text" alt="Your Username Here" id="username" required>
             <span></span>
             <label>Username:</label>
         </div>
         <br>
         <div class="txt_field">
-            <input type="text" alt="Your Email Here" required>
+            <input type="text" alt="Your Email Here" id="email" required>
             <span></span>
             <label>Email:</label>
         </div>
         <br>
         <div class="txt_field">
-            <input type="password" alt="Your Password Here" required>
+            <input type="password" alt="Your Password Here" id="password" required>
             <span></span>
             <label>Password:</label>
         </div>
-        </form>
         <br>
         <div class="signup">
             <br>
-            <input type="checkbox"><p2>Remember Me</p2>
-            <p>Bukan Member?<a href="signup.html"> Sign Up</a></p>
-            <input type="submit"class="btn0" value="Login"><a href="panel.html"></a></input>
+            <input type="checkbox" class="check"><p2>Remember Me</p2>
+            <p class="notmember">Bukan Member?<a class="hreflink" href="signup.html"> Sign Up</a></p>
+            <input type="submit"class="btn0" value="Login"></input>
             <div class="forgotpass">
-                <a class="btn0" href="forgotpass.html">Forgot Your Password?</a>
+                <a class="btn1" href="forgotpass.html">Forgot Your Password?</a>
+                <p id="error-message"></p>
                 <!--<img src="https://s0.2mdn.net/simgad/13460762122573638400" alt="Advertisement" border="0" width="160" height="600" style="display:block">!-->
             </div>
         </div>
-        <br>
+        </form>
+        <br><br><br>
     </div>
     </div>
